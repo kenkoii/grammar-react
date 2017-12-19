@@ -1,22 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import './index.css';
-import App from './App';
-import Login from './components/login/Login';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
-const Root = () => {
-    return (
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={App} />
-          <Route path="/login" component={Login} />
-        </div>
-      </BrowserRouter>
-    )
-  }
+import { store } from './helpers';
+import { App } from './App';
 
-ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
-          // <Miss component={NotFound} />
+// // setup fake backend
+// import { configureFakeBackend } from './_helpers';
+// configureFakeBackend();
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
