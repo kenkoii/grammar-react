@@ -1,6 +1,6 @@
 export const firebaseConfig = {
-    apiKey: "AIzaSyBK38TO7uBhHmTeklkNx7gUjPJfiCbRlqw",
-    authDomain: "toeic-web-system-79922.firebaseapp.com",
-    databaseURL: "https://toeic-web-system-79922.firebaseio.com",
-    projectId: "toeic-web-system-79922"
+    apiKey: "AIzaSyCT9sEEb4ssdY-TOQgjmyS15nNRjhzBFe8",
+    authDomain: "grammar-check-system.firebaseapp.com",
+    databaseURL: "https://grammar-check-system.firebaseio.com",
+    projectId: "grammar-check-system"
 };

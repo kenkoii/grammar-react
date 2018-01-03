@@ -1,8 +1,8 @@
 import {firebaseAuth} from '../firebase'
 import {
-    ConnectedRouter,
-    routerReducer,
-    routerMiddleware,
+    // ConnectedRouter,
+    // routerReducer,
+    // routerMiddleware,
     push
 } from 'react-router-redux'
 
